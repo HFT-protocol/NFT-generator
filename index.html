@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hodl Finance NFT-generator</title>
+
+        <script type="text/javascript" src="nft-gen.js" charset="utf-8"></script>
+        <style>
+            textarea {
+                width: 600px;
+                max-width: 80%;
+                height: 400px;
+            }
+
+            .nft-input, 
+            .nft-output {
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hodl Finance NFT-generator</h1>
+
+        <div class="nft-input">
+            <label for="nft-setup">JSON code NFT setup</label><br>
+            <input type="file" id="select-file" value="Import" /><br>
+            <textarea id="nft-setup"></textarea><br>
+            <input type="number" id="token-count" value="100">
+            <button id="generate">Generate</button>
+        </div>
+
+        <div class="nft-output">
+            <textarea id="nft-output"></textarea><br>
+        </div>
+
+        <script type="text/javascript">
+
+            const importFile = function(blob, outElement) {
+                const fr = new FileReader();
+
+                fr.addEventListener('load', function (e) {
+                    const result = JSON.parse(e.target.result);
+                    const formatted = JSON.stringify(result, null, 2);
+                    outElement.value = formatted;
+                });
+                fr.readAsText(blob);
+            };
+
+            document.getElementById('select-file').addEventListener('change', function (e) {
+                const files = e.target.files;
+
+                if (files.length <= 0) return false;
+
+                importFile(files.item(0), document.getElementById('nft-setup'));
+            });
+
+            document.getElementById('generate').addEventListener('click', function () {
+                const nft = new NftGen(document.getElementById('nft-setup').value);
+                const count = Number(document.getElementById('token-count').value);
+
+                document.getElementById('nft-output').value = JSON.stringify(nft.generate(count), null, 2);
+            });
+
+        </script>
+    </body>
+</html>

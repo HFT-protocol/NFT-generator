@@ -1,0 +1,512 @@
+{
+    "name": "Hodlnaut",
+    "description": "NFT project to generate Hodlnauts",
+    "params": [
+        {
+            "param": "Faction",
+            "values": [
+                {
+                    "value": "Blue",
+                    "distribution": 1
+                }
+            ]
+        },
+        {
+            "param": "ClassType",
+            "values": [
+                {
+                    "value": "Juggernaut",
+                    "distribution": 0.2
+                },
+                {
+                    "value": "Spacenaut",
+                    "distribution": 0.2
+                },
+                {
+                    "value": "Mechanaut",
+                    "distribution": 0.2
+                },
+                {
+                    "value": "Pilot",
+                    "distribution": 0.2
+                },
+                {
+                    "value": "Medic",
+                    "distribution": 0.2
+                }
+            ]
+        },
+        {
+            "param": "Rank",
+            "values": [
+                {
+                    "value": 1,
+                    "distribution": 0.19
+                },
+                {
+                    "value": 2,
+                    "distribution": 0.18
+                },
+                {
+                    "value": 3,
+                    "distribution": 0.16
+                },
+                {
+                    "value": 4,
+                    "distribution": 0.14
+                },
+                {
+                    "value": 5,
+                    "distribution": 0.12
+                },
+                {
+                    "value": 6,
+                    "distribution": 0.08
+                },
+                {
+                    "value": 7,
+                    "distribution": 0.05
+                },
+                {
+                    "value": 8,
+                    "distribution": 0.03
+                },
+                {
+                    "value": 9,
+                    "distribution": 0.015
+                },
+                {
+                    "value": 10,
+                    "distribution": 0.0125
+                },
+                {
+                    "value": 11,
+                    "distribution": 0.01
+                },
+                {
+                    "value": 12,
+                    "distribution": 0.0075
+                },
+                {
+                    "value": 13,
+                    "distribution": 0.005
+                }
+            ]
+        },
+        {
+            "param": "Background",
+            "values": [
+                {
+                    "value": "Basic Grey",
+                    "distribution": 0.25
+                },
+                {
+                    "value": "Basic Blue",
+                    "distribution": 0.20
+                },
+                {
+                    "value": "Basic Green",
+                    "distribution": 0.18
+                },
+                {
+                    "value": "Basic Purple",
+                    "distribution": 0.15
+                },
+                {
+                    "value": "Basic Orange",
+                    "distribution": 0.12
+                },
+                {
+                    "value": "Special 1",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "Special 2",
+                    "distribution": 0.03
+                },
+                {
+                    "value": "Special 3",
+                    "distribution": 0.015
+                },
+                {
+                    "value": "Special 4",
+                    "distribution": 0.005
+                }
+            ]
+        },
+        {
+            "param": "Visor/Eye",
+            "values": [
+                {
+                    "value": "Black",
+                    "distribution": 0.20
+                },
+                {
+                    "value": "Silver",
+                    "distribution": 0.20
+                },
+                {
+                    "value": "Brown",
+                    "distribution": 0.20
+                },
+                {
+                    "value": "Pearl",
+                    "distribution": 0.15
+                },
+                {
+                    "value": "Gold",
+                    "distribution": 0.09
+                },
+                {
+                    "value": "Matt Black",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "Matt White",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "Matt Grey",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "Neon Blue",
+                    "distribution": 0.01
+                }
+            ]
+        },
+        {
+            "param": "Helmet",
+            "values": [
+                {
+                    "value": "1-1",
+                    "distribution": 0.10
+                },
+                {
+                    "value": "1-2",
+                    "distribution": 0.10
+                },
+                {
+                    "value": "1-3",
+                    "distribution": 0.10
+                },
+                {
+                    "value": "1-4",
+                    "distribution": 0.10
+                },
+                {
+                    "value": "1-5",
+                    "distribution": 0.10
+                },
+                {
+                    "value": "2-1",
+                    "distribution": 0.075
+                },
+                {
+                    "value": "2-2",
+                    "distribution": 0.075
+                },
+                {
+                    "value": "2-3",
+                    "distribution": 0.075
+                },
+                {
+                    "value": "2-4",
+                    "distribution": 0.075
+                },
+                {
+                    "value": "3-1",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "3-2",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "3-3",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "4-1",
+                    "distribution": 0.025
+                },
+                {
+                    "value": "4-2",
+                    "distribution": 0.025
+                }
+            ]
+        },
+        {
+            "param": "Chest",
+            "values": [
+                {
+                    "value": "1-1",
+                    "distribution": 0.10
+                },
+                {
+                    "value": "1-2",
+                    "distribution": 0.10
+                },
+                {
+                    "value": "1-3",
+                    "distribution": 0.10
+                },
+                {
+                    "value": "1-4",
+                    "distribution": 0.10
+                },
+                {
+                    "value": "1-5",
+                    "distribution": 0.10
+                },
+                {
+                    "value": "2-1",
+                    "distribution": 0.075
+                },
+                {
+                    "value": "2-2",
+                    "distribution": 0.075
+                },
+                {
+                    "value": "2-3",
+                    "distribution": 0.075
+                },
+                {
+                    "value": "2-4",
+                    "distribution": 0.075
+                },
+                {
+                    "value": "3-1",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "3-2",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "3-3",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "4-1",
+                    "distribution": 0.025
+                },
+                {
+                    "value": "4-2",
+                    "distribution": 0.025
+                }
+            ]
+        },
+        {
+            "param": "Special",
+            "values": [
+                {
+                    "value": "Special 1",
+                    "distribution": 0.075
+                },
+                {
+                    "value": "Special 2",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "Special 3",
+                    "distribution": 0.025
+                }
+            ]
+        },
+        {
+            "param": "Colors",
+            "count": 5,
+            "unique": true,
+            "fill": [
+                {
+                    "value": 1,
+                    "distribution": 0.025
+                },
+                {
+                    "value": 2,
+                    "distribution": 0.25
+                },
+                {
+                    "value": 3,
+                    "distribution": 0.5
+                },
+                {
+                    "value": 4,
+                    "distribution": 0.2
+                },
+                {
+                    "value": 5,
+                    "distribution": 0.025
+                }
+            ],
+            "values": [
+                {
+                    "value": "White",
+                    "distribution": 0.08
+                },
+                {
+                    "value": "Grey",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "Red",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "Dark Grey",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "Dark Brown",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "Light Green",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "Orange",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "Blurple",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "Blue Grey",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "Green",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "Pastel Blue",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "Aqua Lite",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "Blood Red",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "Pink",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "Sky Blue",
+                    "distribution": 0.05
+                },
+                {
+                    "value": "Yellow",
+                    "distribution": 0.04
+                },
+                {
+                    "value": "Blue",
+                    "distribution": 0.04
+                },
+                {
+                    "value": "Black",
+                    "distribution": 0.03
+                },
+                {
+                    "value": "Aqua Dark",
+                    "distribution": 0.03
+                },
+                {
+                    "value": "Purple",
+                    "distribution": 0.03
+                },
+                {
+                    "value": "Soft Red",
+                    "distribution": 0.03
+                },
+                {
+                    "value": "Gold",
+                    "distribution": 0.01
+                },
+                {
+                    "value": "Silver",
+                    "distribution": 0.01
+                }
+            ]
+        },
+        {
+            "param": "Rare",
+            "values": [
+                {
+                    "value": "Cam1",
+                    "distribution": 0.01
+                },
+                {
+                    "value": "Cam2",
+                    "distribution": 0.01
+                },
+                {
+                    "value": "Cam3",
+                    "distribution": 0.01
+                },
+                {
+                    "value": "Cam4",
+                    "distribution": 0.01
+                },
+                {
+                    "value": "Gold",
+                    "distribution": 0.001
+                },
+                {
+                    "value": "Gold Helm",
+                    "distribution": 0.005
+                },
+                {
+                    "value": "Silver",
+                    "distribution": 0.001
+                },
+                {
+                    "value": "Silver Helm",
+                    "distribution": 0.005
+                },
+                {
+                    "value": "Pink",
+                    "distribution": 0.004
+                },
+                {
+                    "value": "Spring",
+                    "distribution": 0.005
+                },
+                {
+                    "value": "Yellow Lambo",
+                    "distribution": 0.004
+                },
+                {
+                    "value": "Red Ferrari",
+                    "distribution": 0.004
+                },
+                {
+                    "value": "All Stickers",
+                    "distribution": 0.003
+                },
+                {
+                    "value": "Matt White - G",
+                    "distribution": 0.001
+                },
+                {
+                    "value": "Matt Black - G",
+                    "distribution": 0.001
+                },
+                {
+                    "value": "Gold Special",
+                    "distribution": 0.004
+                },
+                {
+                    "value": "Silver Special",
+                    "distribution": 0.004
+                }
+            ]
+        }
+    ]
+}
